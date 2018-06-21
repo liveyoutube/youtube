@@ -1,0 +1,208 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background-image:url("https://picsum.photos/720/?random");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.title{
+	width:100%;
+	height:30%;
+}
+
+.logo{
+	margin: 0 auto;
+	width:30%;
+	height:30%;
+	display:block;
+	padding:30px;
+}
+
+.searchfield{
+	width:100%;
+	height:100px;
+	position: relative;
+	
+}
+.inputquery{
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	top:30%;
+	left:20%;
+	width:60%;
+	height:40px;
+	border-radius:5px;
+	font-size: 25px;
+	
+}
+#sbtn{
+	position: absolute;
+	top:31%;
+	right:15%;
+	width:40px;
+	height:40px;
+	border:hidden;
+	background-color: rgba(255,255,255,1);
+}
+#sbtn:hover{
+	background-color: rgba(150,150,150,0.5);
+	cursor:pointer;
+}
+
+.result-page{
+	margin:0 auto;
+	width:85%;
+	/*background:linear-gradient(gray,black);*/
+	background-color: rgba(220,220,220,0.3);
+	display:none;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	
+}
+.result{
+	margin: 0 auto;
+	width:80%;
+	border : 5px solid hidden;
+	padding: 20px;
+}
+.thumbnail{
+	display: block;
+	margin: 0 auto;
+	width: 320px;
+	height: 180px;
+	box-shadow: 10px 10px 10px gray;
+
+	
+}
+.result-title{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 25px;
+text-align: center;
+color:black;
+}
+
+.thumbnail:hover{
+	width: 310px;
+	height:170px;
+	box-shadow: 5px 5px 5px gray;
+
+
+}
+.result:hover{
+cursor:pointer;
+
+}
+
+
+.LIVEVIDEOSTATS{
+	position: fixed;
+	padding:20px;
+	background-color: rgba(220,220,220,1);
+	top:20%;
+	left:14%;
+	box-shadow: 9px 9px 5px gray;
+	width:75%;
+	z-index: 1000;
+	border-radius: 10px;
+}
+
+#id_videothumbnail,#id_channelthumbnail{
+	display: block;
+	margin:0 auto;
+	width:320px;
+	height:240px;
+	border:20px hidden;
+
+
+}
+#A{
+	text-align: center;
+	color:red;
+	font-weight: bold;
+}
+.videotitle{
+font-size: 25px;
+color:black;
+text-align: center;
+}
+#viewcount ,#comments ,#licon, #disicon,{
+	color:white;
+}
+#likes{
+	color:green;
+}
+#dislikes{
+	color:red;
+}
+#viewcount{
+	text-align: center;
+	vertical-align: center;
+}
+#licon,#disicon{
+	font-size: 45px;
+}
+#cut,#cutchannel{
+	position: absolute;
+	right:0;
+	cursor:pointer;
+	border:hidden;
+	background-color: red;
+	width:30px;
+	height:30px;
+}
+#cut:hover{
+	background-color:rgba(150,0,0,0.3);
+}
+.LIVECHANNELSTATS{
+	position: fixed;
+	padding:20px;
+	background-color: rgba(220,220,220,1);
+	top:25%;
+	left:15%;
+	box-shadow: 9px 9px 5px grey;
+	width:75%;
+	z-index: 1000;
+	border-radius: 10px;
+}
+.channelname{
+	font-size: 40px;
+	text-align: center;
+	color:black;
+}
+#subscribers{
+	text-align: center;
+	font-size: 30px;
+	color:green;
+}
+#tviews,#uploads{
+font-size: 20px
+}
+
+.pageinfo{
+	margin:0 auto;
+	background-color: rgba(200,200,200,0.4);
+	padding:30px;
+	width:40%;
+	position: absolute;
+	top:40%;
+	left:30%;
+	border-radius: 10px;
+}
+#info_title{
+	font-family: 'Shrikhand', cursive;
+	font-size: 40px;
+	color:black;
+
+}
+.footerinfo{
+	position: fixed;
+	bottom:10px;
+	left:10px;
+}
+
+

@@ -1,0 +1,161 @@
+@media screen and (max-width: 480px){
+	
+	body{
+	background-image:url("https://picsum.photos/320/720?random");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+	.logo{
+	margin: 0 auto;
+	width:40%;
+	height:35%;
+	display:block;
+	padding:35px;
+	}
+
+	.inputquery{
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	top:30%;
+	left:5%;
+	width:70%;
+	height:40px;
+	border-radius:5px;
+	font-size: 20px;
+	
+	}
+	#sbtn{
+	position: absolute;
+	top:31%;
+	right:5%;
+	width:40px;
+	height:40px;
+	border:hidden;
+	background-color: rgba(255,255,255,1);
+	}
+	.pageinfo{
+	margin:0 auto;
+	background-color: rgba(200,200,200,0.5);
+	padding:30px;
+	width:70%;
+	position: absolute;
+	top:40%;
+	left:5%;
+	border-radius: 10px;
+	}
+	#info_title{
+	font-family: 'Shrikhand', cursive;
+	font-size: 30px;
+	color:black;
+
+	}
+
+	.result-page{
+	margin:0 auto;
+	width:90%;
+	/*background:linear-gradient(gray,black);*/
+	background-color: rgba(220,220,220,0.3);
+	display:none;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	
+	}
+
+	.result{
+	margin: 0 auto;
+	width:80%;
+	border : 5px solid hidden;
+	padding: 20px;
+}
+.thumbnail{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 200px;
+	box-shadow: 10px 10px 10px gray;
+
+	
+}
+.result-title{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 25px;
+text-align: center;
+color:black;
+}
+
+.thumbnail:hover{
+	width: 90%;
+	height:180px;
+	box-shadow: 5px 5px 5px gray;
+
+
+}
+.result:hover{
+cursor:pointer;
+
+}
+
+.LIVECHANNELSTATS,.LIVEVIDEOSTATS{
+	position: fixed;
+	padding:10px;
+	background-color: rgba(220,220,220,1);
+	top:0%;
+	left:1%;
+	box-shadow: 9px 9px 5px grey;
+	width:90%;
+	z-index: 1000;
+	border-radius: 10px;
+}
+#id_videothumbnail,#id_channelthumbnail{
+	display: block;
+	margin:0 auto;
+	width:100%;
+	height:240px;
+	border:20px hidden;
+
+
+}
+
+#cut,#cutchannel{
+	position: absolute;
+	right:0px;
+	top:0px;
+	cursor:pointer;
+	border:hidden;
+	background-color: red;
+	width:30px;
+	height:30px;
+}
+#cut:hover{
+	background-color:rgba(150,0,0,0.3);
+}
+
+#subscribers{
+	text-align: center;
+	font-size: 32px;
+	color:green;
+	font-weight: bold;
+}
+
+#likes{
+	color:green;
+	font-weight: bold;
+}
+#dislikes{
+	color:red;
+	font-weight: bold;
+}
+#viewcount{
+	text-align: center;
+	vertical-align: center;
+
+}
+#licon,#disicon{
+	font-size: 30px;
+}
+
+
+}

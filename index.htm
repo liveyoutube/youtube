@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<title>Youtube Live Statistics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./mystyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="odometer-plaza.css" />
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="./style2.css" />
+
+</head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="./odometer.js"></script>
+<script type="text/javascript" src="./code.js"></script>
+<script type="text/javascript" src="./code2.js"></script>
+
+<body>
+<div class="title">
+	<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2000px-YouTube_Logo_2017.svg.png">
+</div>
+
+<div class="searchfield">
+<input class="inputquery" id="string" placeholder="Search" required >
+</input>
+<button  id="sbtn"><i class="fa fa-search"style="font-size:25px;"></i></button>
+</div>
+
+<div class="pageinfo">
+	<div id="info_title">Get Realtime YouTube Statistics</div>
+	<h3>Just type in the keyword you want to search and the YouTube API does the work for you.</h3>
+	<h3>You can check realtime video views and real time Subscriber count </h3>
+</div>
+
+<!-- Search Page-->
+
+
+<div class="result-page" id="resultpage">
+	<div id="1"class="result">
+		<img id="1.1" class="thumbnail">
+		<div id="1.2"class="result-title"></div>
+		<div id="1.3"class="type"></div>
+	</div>
+
+	<div id="2"class="result">
+		<img id="2.1" class="thumbnail">
+		<div id="2.2"class="result-title"></div>
+		<div id="2.3"class="type"></div>
+	</div>
+
+	<div id="3" class="result">
+		<img id="3.1" class="thumbnail">
+		<div id="3.2"class="result-title"></div>
+		<div id="3.3"class="type"></div>
+	</div>
+
+	<div id="4" class="result">
+		<img id="4.1" class="thumbnail">
+		<div id="4.2"class="result-title"></div>
+		<div id="4.3"class="type"></div>
+	</div>
+	<div id="5" class="result">
+		<img id="5.1" class="thumbnail">
+		<div id="5.2"class="result-title"></div>
+		<div id="5.3"class="type"></div>
+	</div>
+	<div id="6" class="result">
+		<img id="6.1" class="thumbnail">
+		<div id="6.2"class="result-title"></div>
+		<div id="6.3"class="type"></div>
+	</div><div id="7" class="result">
+		<img id="7.1" class="thumbnail">
+		<div id="7.2"class="result-title"></div>
+		<div id="7.3"class="type"></div>
+	</div><div id="8" class="result">
+		<img id="8.1" class="thumbnail">
+		<div id="8.2"class="result-title"></div>
+		<div id="8.3"class="type"></div>
+	</div><div id="9" class="result">
+		<img id="9.1" class="thumbnail">
+		<div id="9.2"class="result-title"></div>
+		<div id="9.3"class="type"></div>
+	</div><div id="10" class="result">
+		<img id="10.1" class="thumbnail">
+		<div id="10.2"class="result-title"></div>
+		<div id="10.3"class="type"></div>
+	</div><div id="11" class="result">
+		<img id="11.1" class="thumbnail">
+		<div id="11.2"class="result-title"></div>
+		<div id="11.3"class="type"></div>
+	</div>
+<div id="12" class="result">
+		<img id="12.1" class="thumbnail">
+		<div id="12.2"class="result-title"></div>
+		<div id="12.3"class="type"></div>
+	</div><div id="13" class="result">
+		<img id="13.1" class="thumbnail">
+		<div id="13.2"class="result-title"></div>
+		<div id="13.3"class="type"></div>
+	</div><div id="14" class="result">
+		<img id="14.1" class="thumbnail">
+		<div id="14.2"class="result-title"></div>
+		<div id="14.3"class="type"></div>
+	</div><div id="15" class="result">
+		<img id="15.1" class="thumbnail">
+		<div id="15.2"class="result-title"></div>
+		<div id="15.3"class="type"></div>
+	</div>
+</div>
+
+<!-- <div id="footerinfo" onclick="change()">Change Background Image </id>
+ --><!-- Search Page End -->
+
+<div class="LIVEVIDEOSTATS">
+	<h3 id="A">YouTube Live Video Statistics</h3>
+	<button id="cut">X</button>
+	<img id="id_videothumbnail">
+	<h1 class="videotitle" id="id_videotitle"></h1>
+	<h2 id="viewcount"></h2>
+	<i class="fa fa-thumbs-up" id="licon"style="display:none;"></i><h3 id="likes"class="odometer"></h3>
+	<i class="fa fa-thumbs-down"id="disicon" style="display:none;"></i><h3 id="dislikes"class="odometer"></h3>
+	<h3 id="comments"></h3>
+</div>
+
+<div class="LIVECHANNELSTATS"id="v">
+	<h3 id="A">YouTube Live Subscriber Count</h3>
+	<button id="cutchannel">X</button>
+ 	<img id="id_channelthumbnail">
+	<h1 class="channelname"id="channelname"></h1>
+	<h2 style="color:green">Subscribers</h2><h2 id="subscribers"class="odometer"></h2>
+	<h3 id="tviews"></h3>
+	<h5 id="uploads"></h5>
+	<h6 id="debug"></h6>
+</div>
+
+
+
+</body>
+</html>
